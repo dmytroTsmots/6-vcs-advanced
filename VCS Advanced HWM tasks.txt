@@ -1,0 +1,35 @@
+1.
+
+$ git clone https://github.com/dmytroTsmots/6-vcs-advanced.git
+$ cd c:/Git/6-vcs-advanced/
+$ mkdir assets
+$ mkdir uploads
+$ touch index.html
+$ touch assets/text.txt
+$ touch uploads/text.txt
+$ git branch architecture
+$ git checkout architecture
+$ git config --global user.name "dmytroTsmots"
+$ git config --global user.email dmytro.tsmots@gmail.com
+$ git status
+$ git add .
+$ git commit -m "added new folders - assets, uploads and index.html"
+$ touch assets/all.js
+$ touch assets/css.js
+$ git status
+$ git add .
+$ git commit -m "added files all.js, css.js to assets folder"
+$ git push -u origin architecture
+$ touch .gitignore
+$ echo "uploads/" > .gitignore
+$ cat .gitignore
+$ git status
+$ git add .
+$ git commit -m "added .gitignore file"
+$ git push
+$ git checkout master
+$ git merge architecture
+$ git push
+$ git branch -d architecture
+$ git push origin :architecture
+
