@@ -33,3 +33,21 @@ $ git push
 $ git branch -d architecture
 $ git push origin :architecture
 
+2.
+
+$ git branch rebaseTask
+$ mkdir task2
+$ touch task2/text.txt
+$ echo "get started VCS advanced task 2" > task2/text.txt
+$ git add .
+$ git commit -m "added task2 folder with text.txt explanation"
+$ git checkout rebaseTask
+$ git rebase master
+$ touch task2/text1.txt
+$ echo "new commit in branch rebaseTask" >> task2/text.txt
+$ git add .
+$ git commit -m "upload new file to task2 folder"
+$ git checkout master
+$ git rebase rebaseTask
+$ git branch -d rebaseTask
+$ git push
