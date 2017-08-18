@@ -83,4 +83,3 @@ $ git add .
 $ git commit -m "added changes to index.html file gh-pages branch"
 $ git push
 https://dmytrotsmots.github.io/6-vcs-advanced/
-Зміни відбулись, залишив бренч gh-pages для перегляду.
