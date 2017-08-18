@@ -21,7 +21,7 @@ $ git add .
 $ git commit -m "added files all.js, css.js to assets folder"
 $ git push -u origin architecture
 $ touch .gitignore
-$ echo "uploads/" > .gitignore
+$ echo "/uploads/*" > .gitignore
 $ cat .gitignore
 $ git status
 $ git add .
