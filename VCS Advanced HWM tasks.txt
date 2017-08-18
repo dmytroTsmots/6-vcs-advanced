@@ -83,3 +83,27 @@ $ git add .
 $ git commit -m "added changes to index.html file gh-pages branch"
 $ git push
 https://dmytrotsmots.github.io/6-vcs-advanced/
+
+6.
+
+$ touch file.txt
+$ echo "text" > file.txt
+$ git add .
+$ git commit -m "added file.txt"
+$ git checkout gh-pages
+$ touch file.txt
+$ echo "some another" > file.txt
+$ git add .
+$ git commit -m "added file.txt to branch gh-pages"
+$ git checkout master
+$ git merge gh-pages
+
+Auto-merging file.txt
+CONFLICT (add/add): Merge conflict in file.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+$ notepad file.txt
+$ git status
+$ git add .
+$ git commit -m "merged conflict"
+$ git push
