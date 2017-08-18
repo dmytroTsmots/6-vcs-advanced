@@ -1,0 +1,3 @@
+[submodule "newModule"]
+	path = newModule
+	url = https://github.com/dmytroTsmots/6-vcs-advanced.git
