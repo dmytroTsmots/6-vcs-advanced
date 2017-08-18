@@ -61,8 +61,17 @@ $ git add .
 $ git commit -m "added task3 folder with text.txt explanation"
 $ git tag -a v1.1 -m "version 1.1"
 $ git tag
-$ git show v1.1
+$ touch task3/text1.txt
+$ echo "some text" > task3/text1.txt
+$ git add .
 $ git push
+$ git commit -m "added new text.txt to folder task 3"
+$ git tag -a v1.2 -m "Version 1.2"
+$ git tag
+$ git show
+$ git push
+$ git push origin v1.1
+$ git push origin v1.2
 
 4.
 
